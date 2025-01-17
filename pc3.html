@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .restaurant-cards {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        box-sizing: border-box;
+      }
+      .restaurant-card {
+        width: 350px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 40px rgba(120, 120, 120, 0.4);
+        box-sizing: border-box;
+      }
+      .restaurant-card img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        position: relative;
+      }
+      .group {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+        padding: 5px;
+        color: grey;
+        font-size: 18px;
+      }
+      .rname {
+        font-weight: 700;
+        color: black;
+        font-size: 18px;
+      }
+      .rating {
+        background-color: green;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 7px;
+        font-weight: 700;
+      }
+      .rimage {
+        position: relative;
+      }
+      .offer {
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        color: white;
+        background-color: red;
+        font-weight: 700;
+        padding: 5px;
+        border-radius: 50px;
+      }
+      nav {
+        padding: 10px 20px;
+        background-color: grey;
+        color: white;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      button {
+        border-radius: 10px;
+        outline: none;
+        border-color: grey;
+        padding: 10px;
+      }
+      .c1 {
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: lightblue;
+        text-align: center;
+        padding-top: 7px;
+      }
+      .c2 {
+        display: flex;
+        gap: 10px;
+      }
+      .n1 {
+        background-color: tomato;
+        text-align: center;
+        font-weight: 700;
+        font-size: 25px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="n1">Domino's Restaurant Cards</nav>
+
+    <nav>
+      <div class="nav">
+        <div class="c2">
+          <i class="fa-solid fa-location-dot c1"></i>
+          <div>
+            Give us your exact location<br />
+            for seamless delivery
+          </div>
+        </div>
+        <button>Detect location</button>
+      </div>
+    </nav>
+    <div class="restaurant-cards">
+      <div class="restaurant-card">
+        <div class="rimage">
+         <img
+         src="https://cdn1.desidime.com/cdn-cgi/image/fit=crop,f=auto,onerror=redirect,w=1200,h=900,q=90/topics/photos/1778729/original/ThumbnailDominos-01.jpg"
+         alt=""
+         
+       />
+       <div class="offer">
+      <marquee behavior="" direction="">&#x20b9 40% OFF</marquee>
+      </div>
+        </div>
+          
+           <div class="group">
+             <p class="rname">Domino's</p>
+             <p class="rating">1.6 &#x2605</p>
+           </div>
+           <div class="group">
+             <p>Pizza,Fast Food,Deserts</p>
+             <p>&#x20b9 100 Off Two</p>
+           </div>
+           <div class="group">
+             <p>Jubillee Hills,Hyderabad</p>
+             <p>1.7KM</p>
+           </div>
+         </div>
+         <div class="restaurant-card">
+         <div class="rimage">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeMKalvBjPUtuIQbrHykM9rWdjIqRcu6XAMA&s" alt="">
+         <div class="offer">
+         <marquee behavior="" direction="">&#x20b9 40% OFF</marquee>
+         </div>
+       </div>        
+           <div class="group">
+             <p class="rname">Domino's</p>
+             <p class="rating">2.6 &#x2605</p>
+           </div>
+           <div class="group">
+             <p>Pizza,Fast Food,Deserts</p>
+             <p>&#x20b9 200 Off Two</p>
+           </div>
+           <div class="group">
+             <p>Jubillee Hills,Hyderabad</p>
+             <p>2.7KM</p>
+           </div>
+         </div>
+               
+       
+         <div class="restaurant-card">
+           <div class="rimage">
+             <img src="https://cache.dominos.com/wam/prod/market/AW/_en/images/promo/1280c71e-c6e0-457f-a60c-2beb05024977.jpg" alt="">
+             <div class="offer">
+           <marquee behavior="" direction="">&#x20b9 40% OFF</marquee>
+           </div>
+         </div>        
+             <div class="group">
+               <p class="rname">Domino's</p>
+               <p class="rating">3.6 &#x2605</p>
+             </div>
+             <div class="group">
+               <p>Pizza,Fast Food,Deserts</p>
+               <p>&#x20b9 300 Off Two</p>
+             </div>
+             <div class="group">
+               <p>Jubillee Hills,Hyderabad</p>
+               <p>3.7KM</p>
+             </div>
+           </div>
+   
+           <div class="restaurant-card">
+             <div class="rimage">
+               <img src="https://i.pinimg.com/736x/9a/df/1a/9adf1af5780f5823fc40bd4e0d52f84d.jpg" alt="">             
+               <div class="offer">
+             <marquee behavior="" direction="">&#x20b9 40% OFF</marquee>
+             </div>
+           </div>        
+               <div class="group">
+                 <p class="rname">Domino's</p>
+                 <p class="rating">4.6 &#x2605</p>
+               </div>
+               <div class="group">
+                 <p>Pizza,Fast Food,Deserts</p>
+                 <p>&#x20b9 400 Off Two</p>
+               </div>
+               <div class="group">
+                 <p>Jubillee Hills,Hyderabad</p>
+                 <p>4.7KM</p>
+               </div>
+             </div>
+                 
+             <div class="restaurant-card">
+               <div class="rimage">
+                 <img src="https://www.legaleraonline.com/h-upload/2024/04/15/1238018-dominos-pizza.webp" alt="">                
+   
+                   <div class="offer">
+               <marquee behavior="" direction="">&#x20b9 40% OFF</marquee>
+               </div>
+             </div>        
+                 <div class="group">
+                   <p class="rname">Domino's</p>
+                   <p class="rating">5.6 &#x2605</p>
+                 </div>
+                 <div class="group">
+                   <p>Pizza,Fast Food,Deserts</p>
+                   <p>&#x20b9 500 Off Two</p>
+                 </div>
+                 <div class="group">
+                   <p>Jubillee Hills,Hyderabad</p>
+                   <p>5.7KM</p>
+                 </div>
+               </div>
+               <div class="restaurant-card">
+                 <div class="rimage">
+                   <img src="https://b.zmtcdn.com/data/pictures/9/18418729/79d639339320287468131c420ab1c000.jpg?fit=around|750:500&crop=750:500;*,*" alt="">                  
+   
+                 <div class="offer">
+                 <marquee behavior="" direction="">&#x20b9 40% OFF</marquee>
+                 </div>
+               </div>        
+                   <div class="group">
+                     <p class="rname">Domino's</p>
+                     <p class="rating">6.6 &#x2605</p>
+                   </div>
+                   <div class="group">
+                     <p>Pizza,Fast Food,Deserts</p>
+                     <p>&#x20b9 600 Off Two</p>
+                   </div>
+                   <div class="group">
+                     <p>Jubillee Hills,Hyderabad</p>
+                     <p>6.7KM</p>
+                   </div>
+                 </div>
+                 <div class="restaurant-card">
+                   <div class="rimage">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkFmYh735vs9iuFmzUXuppUn8sFY6t38fa6g&s" alt="">    
+                       <div class="offer">
+                   <marquee behavior="" direction="">&#x20b9 40% OFF</marquee>
+                   </div>
+                 </div>        
+                     <div class="group">
+                       <p class="rname">Domino's</p>
+                       <p class="rating">7.6 &#x2605</p>
+                     </div>
+                     <div class="group">
+                       <p>Pizza,Fast Food,Deserts</p>
+                       <p>&#x20b9 700 Off Two</p>
+                     </div>
+                     <div class="group">
+                       <p>Jubillee Hills,Hyderabad</p>
+                       <p>7.7KM</p>
+                     </div>
+                   </div>
+                   <div class="restaurant-card">
+                     <div class="rimage">
+                   <img src="https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/907/files/2020/04/Screenshot-2020-04-16-19.06.42.png" alt="">    
+                     <div class="offer">
+                     <marquee behavior="" direction="">&#x20b9 40% OFF</marquee>
+                     </div>
+                   </div>        
+                       <div class="group">
+                         <p class="rname">Domino's</p>
+                         <p class="rating">8.6 &#x2605</p>
+                       </div>
+                       <div class="group">
+                         <p>Pizza,Fast Food,Deserts</p>
+                         <p>&#x20b9 800 Off Two</p>
+                       </div>
+                       <div class="group">
+                         <p>Jubillee Hills,Hyderabad</p>
+                         <p>8.7KM</p>
+                       </div>
+                       
+                     </div>
+                     <div class="restaurant-card">
+                       <div class="rimage">
+                        <img
+                        src="https://cdn1.desidime.com/cdn-cgi/image/fit=crop,f=auto,onerror=redirect,w=1200,h=900,q=90/topics/photos/1778729/original/ThumbnailDominos-01.jpg"
+                        alt=""
+                        
+                      />
+                      <div class="offer">
+                     <marquee behavior="" direction="">&#x20b9 40% OFF</marquee>
+                     </div>
+                       </div>
+                         
+                          <div class="group">
+                            <p class="rname">Domino's</p>
+                            <p class="rating">9.6 &#x2605</p>
+                          </div>
+                          <div class="group">
+                            <p>Pizza,Fast Food,Deserts</p>
+                            <p>&#x20b9 900 Off Two</p>
+                          </div>
+                          <div class="group">
+                            <p>Jubillee Hills,Hyderabad</p>
+                            <p>9.7KM</p>
+                          </div>
+                        </div>
+                        <div class="restaurant-card">
+                         <div class="rimage">
+                          <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJif_dbCsfi4wi3WkvuKlI7x12kE9CNv3pog&s"
+                          alt=""
+                          
+                        />
+                        <div class="offer">
+                       <marquee behavior="" direction="">&#x20b9 40% OFF</marquee>
+                       </div>
+                         </div>
+                           
+                            <div class="group">
+                              <p class="rname">Domino's</p>
+                              <p class="rating">10.6 &#x2605</p>
+                            </div>
+                            <div class="group">
+                              <p>Pizza,Fast Food,Deserts</p>
+                              <p>&#x20b9 1000 Off Two</p>
+                            </div>
+                            <div class="group">
+                              <p>Jubillee Hills,Hyderabad</p>
+                              <p>10.7KM</p>
+                            </div>
+                          </div>
+                          <div class="restaurant-card">
+                           <div class="rimage">
+                            <img
+                            src="https://cache.dominos.com/wam/prod/market/OM/_en/images/promo/e2d38fca-7cd1-429b-a7f7-a996bf077d4b.jpg"
+                            alt=""
+                            
+                          />
+                          <div class="offer">
+                         <marquee behavior="" direction="">&#x20b9 40% OFF</marquee>
+                         </div>
+                           </div>
+                             
+                              <div class="group">
+                                <p class="rname">Domino's</p>
+                                <p class="rating">11.6 &#x2605</p>
+                              </div>
+                              <div class="group">
+                                <p>Pizza,Fast Food,Deserts</p>
+                                <p>&#x20b9 1100 Off Two</p>
+                              </div>
+                              <div class="group">
+                                <p>Jubillee Hills,Hyderabad</p>
+                                <p>11.7KM</p>
+                              </div>
+                            </div>
+                            <div class="restaurant-card">
+                             <div class="rimage">
+                              <img
+                              src="https://www.dominos.com.au/ManagedAssets/AU/product/P510/AU_P510_en_menu_12569.jpg?v1991785968"
+                              alt=""
+                              
+                            />
+                            <div class="offer">
+                           <marquee behavior="" direction="">&#x20b9 40% OFF</marquee>
+                           </div>
+                             </div>
+                               
+                                <div class="group">
+                                  <p class="rname">Domino's</p>
+                                  <p class="rating">12.6 &#x2605</p>
+                                </div>
+                                <div class="group">
+                                  <p>Pizza,Fast Food,Deserts</p>
+                                  <p>&#x20b9 1200 Off Two</p>
+                                </div>
+                                <div class="group">
+                                  <p>Jubillee Hills,Hyderabad</p>
+                                  <p>12.7KM</p>
+                                </div>
+                              </div>
+                             
+                                      
+                                 
+                                   
+    </div>
+    
+  </body>
+</html>
